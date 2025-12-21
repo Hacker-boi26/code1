@@ -50,6 +50,21 @@
             opacity: 0.9;
         }
     </style>
+    <script>
+        fetch('https://69476f27ca6715d122fa39a6.mockapi.io/api/v1/loginpage', {
+  method: 'GET',
+  headers: {'content-type':'application/json'},
+}).then(res => {
+  if (res.ok) {
+      return res.json();
+  }
+  // handle error
+}).then(tasks => {
+  // Do something with the list of tasks
+}).catch(error => {
+  // handle error
+})
+    </script>
 </head>
 <body>
     <div class="container">
